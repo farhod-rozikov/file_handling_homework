@@ -5,6 +5,11 @@ def main(data:str):
         data: str
     Returns:
         list: return answer
-    """
+     """
+    lst = data.split(',')        
+    return print(list(map(int, lst)))
 
 # Read data from file
+f = open('txt_file/data01.txt', encoding='UTF-8')
+d_file = f.read()
+main(d_file)
