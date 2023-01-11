@@ -7,7 +7,7 @@ def main(data:str):
         list: return answer
      """
     lst = data.split(',')        
-    return print(lst)
+    return print(list(map(int, lst)))
 
 # Read data from file
 f = open('txt_file/data01.txt', encoding='UTF-8')
