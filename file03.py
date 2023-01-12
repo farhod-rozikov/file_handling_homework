@@ -10,9 +10,9 @@ def main(data:str):
     for x in data:
         if x.isdigit():
             s += x        
-    return print(list(s))
+    return list(s)
 
 # Read data from file
 f = open('txt_file/data03.txt', encoding='UTF-8')
 d_file = f.read()
-main(d_file)
+print(main(d_file))
